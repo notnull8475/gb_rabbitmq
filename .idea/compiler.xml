@@ -8,11 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-rabbitmq" />
         <module name="rabbitmq-console" />
+        <module name="rabbitmq-console-homework" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-rabbit-hw" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-rabbit-hw" options="-parameters" />
       <module name="spring-rabbitmq" options="-parameters" />
     </option>
   </component>
